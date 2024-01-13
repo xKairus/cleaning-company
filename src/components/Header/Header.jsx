@@ -1,13 +1,15 @@
+import classes from "./Header.module.css";
+
 export default function Header() {
   return (
-    <header className="header">
-      <div className="header__logo">CleanSpaces</div>
-      <ul className="nav">
-        <li className="nav__item">Home</li>
-        <li className="nav__item">About Us</li>
-        <li className="nav__item">Services</li>
-        <li className="nav__item">Careers</li>
-        <li className="nav__item">Contact</li>
+    <header className={classes.header}>
+      <div className={classes.header__logo}>CleanSpaces</div>
+      <ul className={classes.nav}>
+        <li className={classes.nav}>Home</li>
+        <li className={classes.nav}>About Us</li>
+        <li className={classes.nav}>Services</li>
+        <li className={classes.nav}>Careers</li>
+        <li className={classes.nav}>Contact</li>
       </ul>
     </header>
   );
