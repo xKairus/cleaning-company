@@ -12,3 +12,13 @@
   gap: 1rem;
   text-transform: uppercase;
 }
+
+.nav__item {
+  list-style: none;
+  background-color: #a7a7a7;
+  padding: 0.5rem;
+}
+
+header .nav__item_active {
+  background-color: #747272;
+}

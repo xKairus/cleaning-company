@@ -9,17 +9,21 @@ import CareersPage from "./components/CareersPage/CareersPage";
 import ContactPage from "./components/ContactPage/ContactPage";
 
 function App() {
-  const [page, setPage] = useState("home");
+  const [activePage, setActivePage] = useState("home");
+
+  const changePage = (newPage) => {
+    setActivePage(newPage);
+  };
 
   return (
     <>
-      <Header active={page} onChange={(current) => setPage(current)}/>
+      <Header activePage={activePage} onChangePage={changePage} />
 
-      {page === "home" && <HomePage />}
-      {page === "about" && <AboutUsPage />}
-      {page === "services" && <ServicesPage />}
-      {page === "careers" && <CareersPage />}
-      {page === "contact" && <ContactPage />}
+      {activePage === "home" && <HomePage />}
+      {activePage === "about" && <AboutUsPage />}
+      {activePage === "services" && <ServicesPage />}
+      {activePage === "careers" && <CareersPage />}
+      {activePage === "contact" && <ContactPage />}
     </>
   );
 }
