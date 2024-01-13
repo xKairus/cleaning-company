@@ -1,5 +1,5 @@
+import WelcomeSection from "../WelcomeSection/WelcomeSection";
+
 export default function HomePage() {
-  return (
-    <div>HomePage</div>
-  )
+  return <WelcomeSection />;
 }
