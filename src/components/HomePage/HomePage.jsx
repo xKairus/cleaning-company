@@ -1,3 +1,4 @@
+import AboutSection from "../AboutSection/AboutSection";
 import ServicesSection from "../ServicesSection/ServicesSection";
 import WelcomeSection from "../WelcomeSection/WelcomeSection";
 
@@ -6,6 +7,7 @@ export default function HomePage({ activePage }) {
   return (
     <>
       <WelcomeSection />
+      <AboutSection />
       <ServicesSection />
     </>
   );
